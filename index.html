@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Katjes Redden - Eva's Spel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud">
+        <h1>🐾 Katjes Redden</h1>
+        <div class="stats">
+          <p>Score: <span id="score">0</span></p>
+          <p>Gered: <span id="saved">0</span></p>
+          <p>Gemist: <span id="missed">0</span> / <span id="maxMisses">5</span></p>
+        </div>
+      </header>
+
+      <section class="play-area" id="playArea" aria-label="Speelveld">
+        <p class="hint">Tik snel op vallende katjes om ze te redden! 🐱</p>
+      </section>
+
+      <footer class="controls">
+        <button id="startButton" type="button">Start spel</button>
+        <button id="restartButton" type="button" disabled>Opnieuw</button>
+      </footer>
+    </main>
+
+    <template id="kittenTemplate">
+      <button class="kitten" type="button" aria-label="Red dit katje">🐱</button>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
